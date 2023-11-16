@@ -5,7 +5,6 @@ def count_words(string):
     else:
         string_list = string.split(' ')
         for word in string_list:
-            if (not word.isspace()) or (len(word) > 0):
-                counter += 1
-                
+            if (not word.isspace()) and (len(word) > 0):
+                counter += 1                
     return counter    
